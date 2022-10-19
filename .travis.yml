@@ -19,7 +19,6 @@ after_script:
   - coveralls
 
 before_deploy: "echo 'Deploying polls from Travis...'"
-before_deploy: "black /Users/lance.zhong/djangopolls/mysite"
 
 deploy:
   provider: elasticbeanstalk
