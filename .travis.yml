@@ -18,17 +18,16 @@ script:
 after_script:
   - coveralls
 
-before_deploy: "echo 'Deploying polls from Travis...'"
+#before_deploy: "echo 'Deploying polls from Travis...'"
+# deploy:
+#   provider: elasticbeanstalk
+#   access_key_id:
+#     secure: "AKIAS5SQ2OCZ2PMFPEWG"
+#   secret_access_key:
+#     secure: "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"
+#   region: "us-west-2"
+#   app: "polls"
+#   env: "django-env"
+#   bucket_name: "polls-S3"
 
-deploy:
-  provider: elasticbeanstalk
-  access_key_id:
-    secure: "AKIAS5SQ2OCZ2PMFPEWG"
-  secret_access_key:
-    secure: "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"
-  region: "us-west-2"
-  app: "polls"
-  env: "django-env"
-  bucket_name: "polls-S3"
-
-only_create_app_version: "true"
+# only_create_app_version: "true"
