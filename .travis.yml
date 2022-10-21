@@ -30,6 +30,5 @@ deploy:
   region: "us-west-2"
   app: "polls"
   env: "django-env"
-  bucket_name: "polls-S3"
 
 only_create_app_version: "true"
