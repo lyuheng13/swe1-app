@@ -26,8 +26,5 @@ deploy:
   app: "polls"
   env: "django-env"
   bucket_name: "elasticbeanstalk-us-west-2-200959226035"
-  on:
-    branch: $BRANCH
-    condition: $BRANCH = develop || $BRANCH = master
 
 only_create_app_version: "true"
