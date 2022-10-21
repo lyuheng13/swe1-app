@@ -21,11 +21,10 @@ before_deploy: "echo 'Deploying polls from Travis...'"
 deploy:
   provider: elasticbeanstalk
   access_key_id:
-    secure: "Encrypted AKIAS5SQ2OCZ2PMFPEWG="
+    secure: "AKIAS5SQ2OCZ2PMFPEWG"
     #secure: "Encrypted AKIAS5SQ2OCZ2PMFPEWG="
   secret_access_key:
-
-    secure: "Encypted wZsLizaDUoPREfTysjp6b/xl4uovap8SHQrTu1WG="
+    secure: "wZsLizaDUoPREfTysjp6b/xl4uovap8SHQrTu1WG"
     #secure: "Encypted wZsLizaDUoPREfTysjp6b/xl4uovap8SHQrTu1WG="
   region: "us-west-2"
   app: "polls"
